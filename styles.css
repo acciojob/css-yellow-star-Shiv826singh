@@ -1,1 +1,37 @@
 /*  your css code here. If applicable */
+body{
+margin:0;
+padding:20px;
+}
+ 
+.star{
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid yellow;
+position: relative;
+transform: rotate(35deg);
+}
+ 
+.star::before{
+content: "";
+position: absolute;
+top: -65px;
+left: -32px;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-bottom: 80px solid yellow;
+transform: rotate(-35deg);
+}
+ 
+.star::after{
+content: "";
+position: absolute;
+top: 3px;
+left: -52px;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid yellow;
+transform: rotate(-70deg);
+}
